@@ -1,0 +1,13 @@
+.pastabox {
+  height: 200px;
+  width: 200px;
+}
+
+.container {
+  display: grid;
+  grid-template-columns: 35% 65%;
+}
+
+.left {
+  background-color: #eca912;
+}
