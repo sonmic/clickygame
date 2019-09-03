@@ -53,8 +53,29 @@ function App() {
   return (
     <div className="container">
       <div className="left">
-        <div className="title">Clicky Game</div>
-        <div className="currentScore">{count}</div>
+        <div className="title">DOGGIRONCINO</div>
+        <br />
+        <div className="subTitle">- CLICKY GAME -</div>
+        <br />
+        <div className="instruction01">
+          Click on an image to earn points, <br /> but don't click on any more
+          than once!
+        </div>
+
+        <br />
+
+        <div className="instruction02">Click an image to begin!</div>
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <div className="currentScore">SCORE : {count}</div>
+        <br />
+        <div className="topScore">TOP SCORE : {count}</div>
       </div>
       <div className="title right">
         {images.map(image => (

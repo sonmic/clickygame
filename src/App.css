@@ -1,3 +1,35 @@
+/* 
+font-family: 'Amatic SC', cursive; <-for headline
+font-family: 'Kristi', cursive;  <-for headline
+font-family: 'Open Sans Condensed', sans-serif;
+font-family: 'Philosopher', sans-serif;
+font-family: 'Cormorant Garamond', serif;
+font-family: 'Montserrat', sans-serif;
+font-family: 'Livvic', sans-serif;
+font-family: 'Mukta', sans-serif;
+font-family: 'Oswald', sans-serif;
+font-family: 'ZCOOL XiaoWei', serif;
+font-family: 'Oranienbaum', serif;
+font-family: 'Marcellus SC', serif;
+*/
+
+.title {
+  font-family: "Kristi", cursive;
+  font-size: 70px;
+}
+
+.subTitle,
+.instruction01,
+.instruction02 {
+  font-family: "Marcellus SC", serif;
+  font-size: 20px;
+}
+
+.currentScore,
+.topScore {
+  font-family: "Marcellus SC", serif;
+  font-size: 40px;
+}
 .pastabox {
   height: 200px;
   width: 200px;
@@ -5,9 +37,51 @@
 
 .container {
   display: grid;
-  grid-template-columns: 35% 65%;
+  grid-template-columns: 45% 55%;
+  align-items: center;
+  /* color: #fff; */
 }
 
 .left {
-  background-color: #eca912;
+  min-height: 100vh;
+  text-align: center;
+  /* background-color: #dce6e6; use this */
+  /* background-color: #eca912; */
+  /* background: url(./images/circle02.png); */
+  /* background-repeat: no-repeat; */
+  /* background-size: 350px; */
+  /* background-position: center bottom 20%; */
+  /* vertical-align: middle; */
+  align-items: center;
+  background-image: linear-gradient(to top, #bfdad9 0%, #dce6e6 100%);
+}
+
+.right {
+  justify-content: space-around;
+  align-items: center;
+  display: grid;
+  grid-template-rows: 30% 30% 30%;
+  grid-template-columns: 30% 30% 30%;
+}
+
+image {
+  margin: auto;
+}
+
+@media only screen and (max-width: 900px) {
+  .right {
+    display: flex;
+    grid-template-rows: none;
+    grid-template-columns: none;
+  }
+
+  .container {
+    display: block;
+    grid-template-columns: none;
+    align-items: center;
+    /* color: #fff; */
+  }
+  .left {
+    min-height: none;
+  }
 }
