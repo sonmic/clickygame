@@ -75,6 +75,57 @@ image {
   margin: auto;
 }
 
+.shake {
+  -webkit-animation: shake 0.5s 0.0125s;
+  animation: shake 0.5s 0.0125s;
+}
+
+@-webkit-keyframes shake {
+  0%,
+  to {
+    -webkit-transform: translateZ(0);
+    transform: translateZ(0);
+  }
+
+  12.5%,
+  37.5%,
+  62.5%,
+  87.5% {
+    -webkit-transform: translate(-10px);
+    transform: translate(-10px);
+  }
+
+  25%,
+  50%,
+  75% {
+    -webkit-transform: translate(10px);
+    transform: translate(10px);
+  }
+}
+
+@keyframes shake {
+  0%,
+  to {
+    -webkit-transform: translateZ(0);
+    transform: translateZ(0);
+  }
+
+  12.5%,
+  37.5%,
+  62.5%,
+  87.5% {
+    -webkit-transform: translate(-10px);
+    transform: translate(-10px);
+  }
+
+  25%,
+  50%,
+  75% {
+    -webkit-transform: translate(10px);
+    transform: translate(10px);
+  }
+}
+
 @media only screen and (max-width: 900px) {
   .right {
     display: flex;

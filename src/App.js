@@ -27,6 +27,7 @@ function App() {
   const [clicked] = useState([]);
   const [score, setScore] = useState(0);
   const [topScore, setTopScore] = useState(0);
+  const [shake, setShake] = useState(false);
   const [images] = useState([
     pasta01,
     pasta02,
@@ -44,6 +45,7 @@ function App() {
     if (clicked.includes(image)) {
       clicked.length = 0;
       setScore(0);
+      setShake(true);
     } else {
       const newScore = score + 1;
       setScore(newScore);
@@ -51,6 +53,7 @@ function App() {
         setTopScore(newScore);
       }
       clicked.push(image);
+      setShake(false);
     }
   };
 
@@ -68,7 +71,13 @@ function App() {
 
         <br />
 
-        <div className="instruction02">Click an image to begin!</div>
+        <div className="instruction02">
+          {topScore == 0
+            ? "Click an image to begin!"
+            : shake
+            ? "You guessed incorrectly!"
+            : "You guessed correctly!"}
+        </div>
         <br />
         <br />
         <br />
@@ -81,7 +90,7 @@ function App() {
         <br />
         <div className="topScore">TOP SCORE : {topScore}</div>
       </div>
-      <div className="title right">
+      <div className={"right" + (shake ? " shake" : "")}>
         {images.map(image => (
           <Pastaimg key={image} url={image} onClick={updateScore} />
         ))}
