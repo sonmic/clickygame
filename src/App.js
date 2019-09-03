@@ -25,7 +25,8 @@ function App() {
   }
 
   const [clicked] = useState([]);
-  const [count, setCount] = useState(0);
+  const [score, setScore] = useState(0);
+  const [topScore, setTopScore] = useState(0);
   const [images] = useState([
     pasta01,
     pasta02,
@@ -42,10 +43,12 @@ function App() {
 
     if (clicked.includes(image)) {
       clicked.length = 0;
-      setCount(0);
+      setScore(0);
     } else {
-      setCount(count + 1);
-
+      setScore(score + 1);
+      if (score > topScore) {
+        setTopScore(score);
+      }
       clicked.push(image);
     }
   };
@@ -73,9 +76,9 @@ function App() {
         <br />
         <br />
         <br />
-        <div className="currentScore">SCORE : {count}</div>
+        <div className="currentScore">SCORE : {score}</div>
         <br />
-        <div className="topScore">TOP SCORE : {count}</div>
+        <div className="topScore">TOP SCORE : {topScore}</div>
       </div>
       <div className="title right">
         {images.map(image => (
