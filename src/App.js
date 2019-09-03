@@ -45,9 +45,10 @@ function App() {
       clicked.length = 0;
       setScore(0);
     } else {
-      setScore(score + 1);
-      if (score > topScore) {
-        setTopScore(score);
+      const newScore = score + 1;
+      setScore(newScore);
+      if (newScore > topScore) {
+        setTopScore(newScore);
       }
       clicked.push(image);
     }
