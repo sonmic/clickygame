@@ -79,13 +79,6 @@ function App() {
             : "You guessed correctly!"}
         </div>
         <br />
-        <br />
-        <br />
-        <br />
-        <br />
-        <br />
-        <br />
-        <br />
         <div className="currentScore">SCORE : {score}</div>
         <br />
         <div className="topScore">TOP SCORE : {topScore}</div>

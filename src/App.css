@@ -149,3 +149,28 @@ image {
     width: 650px;
   }
 }
+
+@media only screen and (max-width: 600px) {
+  .left {
+    padding-bottom: 5%;
+  }
+  .pastabox {
+    background-size: cover;
+    background-position: 50%;
+    height: 110px;
+    width: 110px;
+    /* margin: 5px 5px; */
+  }
+  .currentScore,
+  .topScore {
+    font-size: 25px;
+  }
+  .subTitle,
+  .instruction01,
+  .instruction02 {
+    font-size: 16px;
+  }
+  .title {
+    font-size: 50px;
+  }
+}
