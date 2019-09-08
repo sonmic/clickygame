@@ -12,3 +12,5 @@ If you repeat guesses, you lose and the score is reset to 0, it also keeps track
 - Node
 
 #### Screenshots
+
+![](./images/doggironcinoPreview.png)

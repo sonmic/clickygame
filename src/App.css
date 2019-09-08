@@ -2,32 +2,26 @@
 font-family: 'Amatic SC', cursive; <-for headline
 font-family: 'Kristi', cursive;  <-for headline
 font-family: 'Open Sans Condensed', sans-serif;
-font-family: 'Philosopher', sans-serif;
 font-family: 'Cormorant Garamond', serif;
-font-family: 'Montserrat', sans-serif;
-font-family: 'Livvic', sans-serif;
-font-family: 'Mukta', sans-serif;
-font-family: 'Oswald', sans-serif;
-font-family: 'ZCOOL XiaoWei', serif;
-font-family: 'Oranienbaum', serif;
 font-family: 'Marcellus SC', serif;
 */
 
 .title {
   font-family: "Kristi", cursive;
   font-size: 70px;
+  padding-top: 10%;
 }
 
 .subTitle,
 .instruction01,
 .instruction02 {
-  font-family: "Marcellus SC", serif;
-  font-size: 20px;
+  font-family: "Open Sans Condensed", sans-serif;
+  font-size: 22px;
 }
 
 .currentScore,
 .topScore {
-  font-family: "Marcellus SC", serif;
+  font-family: "Open Sans Condensed", sans-serif;
   font-size: 40px;
 }
 .pastabox {
@@ -172,5 +166,6 @@ image {
   }
   .title {
     font-size: 50px;
+    padding-top: 0;
   }
 }
