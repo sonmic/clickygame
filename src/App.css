@@ -146,12 +146,30 @@ image {
   }
 }
 
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 800px) {
   .container {
     display: block;
     grid-template-columns: none;
     align-items: center;
   }
+  .left {
+    min-height: 0;
+    padding-bottom: 5%;
+  }
+  .title {
+    padding-top: 5%;
+  }
+  .right {
+    width: 550px;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  /* .container {
+    display: block;
+    grid-template-columns: none;
+    align-items: center;
+  } */
 
   .left {
     padding-bottom: 5%;
