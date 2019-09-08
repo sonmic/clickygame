@@ -1,5 +1,4 @@
 /* 
-font-family: 'Amatic SC', cursive; <-for headline
 font-family: 'Kristi', cursive;  <-for headline
 font-family: 'Open Sans Condensed', sans-serif;
 font-family: 'Cormorant Garamond', serif;
@@ -40,13 +39,6 @@ font-family: 'Marcellus SC', serif;
 .left {
   min-height: 100vh;
   text-align: center;
-  /* background-color: #dce6e6; use this */
-  /* background-color: #eca912; */
-  /* background: url(./images/circle02.png); */
-  /* background-repeat: no-repeat; */
-  /* background-size: 350px; */
-  /* background-position: center bottom 20%; */
-  /* vertical-align: middle; */
   align-items: center;
   background-image: linear-gradient(to top, #bfdad9 30%, #dce6e6 100%);
 }
@@ -57,12 +49,6 @@ font-family: 'Marcellus SC', serif;
   flex-wrap: wrap;
   justify-content: center;
   margin: 0 auto;
-
-  /* justify-content: space-around;
-  align-items: center;
-  display: grid;
-  grid-template-rows: 30% 30% 30%;
-  grid-template-columns: 30% 30% 30%; */
 }
 
 image {
@@ -165,12 +151,6 @@ image {
 }
 
 @media only screen and (max-width: 600px) {
-  /* .container {
-    display: block;
-    grid-template-columns: none;
-    align-items: center;
-  } */
-
   .left {
     padding-bottom: 5%;
     min-height: 0;
