@@ -120,44 +120,52 @@ image {
   }
 }
 
-@media only screen and (max-width: 900px) {
+@media (min-width: 1000px) {
+  .right {
+    width: 650px;
+  }
+}
+
+@media only screen and (max-width: 1000px) {
   .right {
     display: flex;
     grid-template-rows: none;
     grid-template-columns: none;
   }
 
-  .container {
-    display: block;
-    grid-template-columns: none;
-    align-items: center;
-    /* color: #fff; */
-  }
   .left {
-    min-height: 0;
+    min-height: 100vh;
+    padding-top: 0;
   }
-}
 
-@media (min-width: 1100px) {
-  .right {
-    width: 650px;
+  .pastabox {
+    background-size: cover;
+    background-position: 50%;
+    height: 150px;
+    width: 150px;
   }
 }
 
 @media only screen and (max-width: 600px) {
+  .container {
+    display: block;
+    grid-template-columns: none;
+    align-items: center;
+  }
+
   .left {
     padding-bottom: 5%;
+    min-height: 0;
   }
   .pastabox {
     background-size: cover;
     background-position: 50%;
     height: 110px;
     width: 110px;
-    /* margin: 5px 5px; */
   }
   .currentScore,
   .topScore {
-    font-size: 25px;
+    font-size: 20px;
   }
   .subTitle,
   .instruction01,
